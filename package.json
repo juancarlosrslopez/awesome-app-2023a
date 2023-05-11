@@ -1,0 +1,29 @@
+{
+  "name": "pcwl",
+  "version": "0.0.0",
+  "description": "App for learning ExpressJs",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git + https://github.com/juancarlosrslopez/awesome-app-2023a.git"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.6.6"
+  },
+  "keywords": [
+    "Express",
+    "ITGAM",
+    "DWPCl",
+    "JavaScript"
+  ],
+  "author": "juancarlos.rslopez@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
