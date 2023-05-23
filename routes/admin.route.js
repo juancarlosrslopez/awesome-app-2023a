@@ -4,15 +4,8 @@ import { Router } from 'express';
 // Creando una instancia del enrutador de express
 const router = Router();
 
-// Exportando el enrutador admin
-export default router;
-
 // GET /add-product
 router.get('/add-product', (req, res, next) => {
-  // Si la petición es post pasamos el siguiente
-  // Middleware
-  if(req.method === "POST") return next();
-
   // Servimos el formulario
   console.log("📢 Sirviendo formulario...");
   res.send(`
@@ -31,3 +24,5 @@ router.post('/add-product', (req, res) => {
   res.redirect('/');
 });
 
+// Exportando el enrutador admin
+export default router;
