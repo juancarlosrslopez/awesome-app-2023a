@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "node --watch app.js" 
+    "dev": "node --watch app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "author": "juancarlos.rslopez@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "http-status": "^1.6.2"
   }
 }
