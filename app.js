@@ -5,12 +5,9 @@ import httpStatus from 'http-status';
 // Template Engine
 import { engine } from 'express-handlebars';
 
-import path from 'path';
-
 // Importando el enrutador
 import adminRouter from './routes/admin.route.js';
 import shopRouter from './routes/shop.route.js';
-import shopRouter from './routes/NotFound.route.js';
 
 // Importando el directorio raiz
 import { ROOT_DIR } from './helpers/paths.js'
