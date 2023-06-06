@@ -8,6 +8,7 @@ import { engine } from 'express-handlebars';
 // Importando el enrutador
 import adminRouter from './routes/admin.route.js';
 import shopRouter from './routes/shop.route.js';
+import error404 from './routes/error404.js';
 
 // Importando el directorio raiz
 import { ROOT_DIR } from './helpers/paths.js'
@@ -47,13 +48,8 @@ app.use(express.static(path.join(ROOT_DIR, 'public')));
 app.use('/admin', adminRouter);
 // Se agrega ruta shop
 app.use(shopRouter);
-
-// Registrando el middleware para el error
-// 404
-app.use((req, res, next) => {
-  res.status(httpStatus.NOT_FOUND)
-  .sendFile(path.resolve('views','404.html'))
-});
+//registrando middleware para el error 404
+app.use(error404);
 
 // Definiendo puertos
 const port = 3000;
